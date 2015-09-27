@@ -12,7 +12,7 @@ export default class MainSection extends React.Component {
       }
     }).toArray();
     return (
-      <div>
+      <div style={{width: '100%'}}>
         <div className={styles['main-section']}>
           <h3 className={styles['main-section__header']}>已知案件</h3>
           <div className={styles['main-section__list']}>{topics.reverse()}</div>

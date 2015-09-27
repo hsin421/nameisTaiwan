@@ -1,5 +1,4 @@
 import React from 'react';
-
 import EntryBox from 'components/EntryBox';
 import MainSection from 'components/MainSection';
 // import Scoreboard from 'components/Scoreboard';
@@ -11,7 +10,7 @@ export default class Vote extends React.Component {
   render() {
     return (
       <div className={styles.vote}>
-        <div style={{display: 'flex', marginLeft: '10%'}}>
+        <div style={{display: '-webkit-inline-box', marginLeft: '10%'}}>
           <div style={{width: '50%', fontSize: '24px'}}>
             <p>
           你也曾遇過以下國籍被誤認的困擾嗎？

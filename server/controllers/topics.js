@@ -24,8 +24,8 @@ exports.all = function(req, res) {
  */
 exports.add = function(req, res) {
   var message = { 
-    "html": "<p>請按下面網址確認您的案件通報 </p> <a href='https://nameistw.herokuapp.com/confirm/" + req.body.id + "'>Here</a>", 
-    "text": "請按下面網址確認您的案件通報 https://nameistw.herokuapp.com/confirm/" + req.body.id, 
+    "html": "<p>請按下面網址確認您的案件通報 </p> <a href='https://nameistw.herokuapp.com/confirm/" + req.body.caseId + "'>Here</a>", 
+    "text": "請按下面網址確認您的案件通報 https://nameistw.herokuapp.com/confirm/" + req.body.caseId, 
     "subject": "感謝您通報誤植台灣案件", 
     "from_email": "home@fapa.org", 
     "from_name": "FAPA", 
