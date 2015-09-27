@@ -11,5 +11,5 @@ module.exports = {
     clientSecret: process.env.GOOGLE_SECRET || '6cKCWD75gHgzCvM4VQyR5_TU',
     callbackURL: process.env.GOOGLE_CALLBACK || "/auth/google/callback"
   },
-  mandrill: process.env.MANDRILL_APIKEY || 'VoJacDE-tM2ZLYw26VCqSg'
+  mandrill: process.env.MANDRILL_APIKEY || 'mandrill key'
 };
