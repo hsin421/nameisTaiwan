@@ -9,7 +9,7 @@ export default class TopicItem extends React.Component {
     return (
       <div className={styles['topic-item']} key={this.props.id}>
         <span className={styles['topic-item__header']}><a href={`http://${this.props.url}`}>{this.props.org}</a></span>
-        <img src={this.props.imgUrl} style={{width: '90%', height: '30%', marginTop: '5px'}} />
+        <a href={this.props.imgUrl} target="_blank"><img src={this.props.imgUrl} style={{width: '90%', height: '30%', marginTop: '5px'}} /></a>
         <span className={styles['topic-item__topic']}>{this.props.situation}</span>
         <span className={styles['topic-item__topic']}>狀態: {this.props.status}</span>
         <span className={styles['topic-item__topic']}>由 {this.props.userName} 提案</span>

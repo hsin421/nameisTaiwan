@@ -20,7 +20,7 @@ export default class MainSection extends React.Component {
         <section style={{fontSize: '25px'}}>
             <h1>我要幫忙</h1>
             <ul style={{listStyle: 'none', margin: '10px'}}>
-              <li style={{marginTop: '15px'}}><a href="https://github.com/hsin421/nameisTaiwan"><i className="fa fa-github"></i> 寫寫code </a></li>
+              <li style={{marginTop: '15px'}}><a href="https://github.com/hsin421/nameisTaiwan"><i className="fa fa-github"></i> 寫寫code / 文案 </a></li>
               <li style={{marginTop: '15px'}}><a href="mailto:shinsonh@gmail.com"><i className="fa fa-dribbble"></i> 美工,畫Logo,icon, etc </a></li>
               <li style={{marginTop: '15px'}}><a href="mailto:shinsonh@gmail.com"><i className="fa fa-group"></i> 當管理員幫忙驗證案子</a></li>
               <li style={{marginTop: '15px'}}><a href="http://fapa.org/new/index.php?option=com_content&view=article&id=66&Itemid=30"><i className="fa fa-paypal"></i> 捐款, keep us online </a> </li>

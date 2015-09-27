@@ -19,7 +19,7 @@ export default class EntryBox extends React.Component {
       situation: null,
       userName: null,
       userEmail: null,
-      imgUrl: ''
+      imgUrl: null
     };
     this._onSave = this._onSave.bind(this);
    }
@@ -41,13 +41,13 @@ export default class EntryBox extends React.Component {
   }
 
   _onChangeName = (text) => {
-    this.setState({userName: text});
+    const defaultImg = 'http://www.ucarecdn.com/85d7241a-2aba-4c2b-940f-ac13b2949294/angrytextemoticonlargec42270.png';
+    const imgUrl = React.findDOMNode(this.refs.uploadcare).value;
+    this.setState({userName: text, imgUrl: imgUrl ? imgUrl : defaultImg });
   }
 
   _onChangeEmail = (text) => {
-    const defaultImg = 'http://www.ucarecdn.com/85d7241a-2aba-4c2b-940f-ac13b2949294/angrytextemoticonlargec42270.png';
-    const imgUrl = React.findDOMNode(this.refs.uploadcare).value;
-    this.setState({userEmail: text, imgUrl: imgUrl ? defaultImg : imgUrl });
+    this.setState({userEmail: text});
   }
 
    _onChangeUrl = (text) => {
@@ -55,17 +55,21 @@ export default class EntryBox extends React.Component {
   }
 
   _onSave() {
-    TopicActions.create(this.state);
-    this.setState({
-      organization: null,
-      url: null,
-      organizationEmail: null,
-      situation: null,
-      userName: null,
-      userEmail: null,
-      imgUrl: null
-    });
-    alert('感謝！我們已寄出確認信件,請按信內網址確認提案');
+    if (this.state.userEmail) {
+      TopicActions.create(this.state);
+      this.setState({
+        organization: null,
+        url: null,
+        organizationEmail: null,
+        situation: null,
+        userName: null,
+        userEmail: null,
+        imgUrl: null
+      });
+      alert('感謝！我們已寄出確認信件,請按信內網址確認提案');
+    } else {
+      this.setState({userEmail: 'Please enter your email!'});
+    }
   }
 
   render() {

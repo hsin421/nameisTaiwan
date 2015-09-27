@@ -1,5 +1,5 @@
 import React from 'react';
-const ENTER_KEY_CODE = 13;
+// const ENTER_KEY_CODE = 13;
 
 /*
  * Code modified from https://github.com/facebook/flux/blob/master/examples/flux-todomvc/js/components/TopicTextInput.react.js
@@ -24,17 +24,17 @@ export default class TopicTextInput extends React.Component {
   /*
    * @param  {object} event
    */
-  _onKeyDown = (event) => {
-    if (event.keyCode === ENTER_KEY_CODE) {
-      this._onSave();
-    }
-  }
+  // _onKeyDown = (event) => {
+  //   if (event.keyCode === ENTER_KEY_CODE) {
+  //     this._onSave();
+  //   }
+  // }
 
   render() {
     return (
       <input className={this.props.className} placeholder={this.props.placeholder} onChange={this._onChange}
         onKeyDown={this._onKeyDown} value={this.props.value}
-        autoFocus={true} />
+      />
     );
   }
 }
