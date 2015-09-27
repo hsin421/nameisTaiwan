@@ -14,7 +14,7 @@ export default class Navigation extends React.Component {
   render() {
     return (
       <nav className={styles.navigation} role="navigation">
-          <a className={styles.navigation__item + ' ' + styles['navigation__item--logo']} activeClassName={styles['navigation__item--active']}>台灣正名</a>
+          <a className={styles.navigation__item + ' ' + styles['navigation__item--logo']} activeClassName={styles['navigation__item--active']}>台灣正名器</a>
       </nav>
     );
   }
