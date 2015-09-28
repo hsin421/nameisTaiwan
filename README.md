@@ -1,5 +1,8 @@
 # 台灣正名器
 
+## 來源
+台灣正名器的目的，是提供海外台人一個通報的平台，來改善這個狀況，集結群眾的力量為台灣正名，我們收到通報之後，經過查證屬實，將以北美FAPA(Formosa Association for Public Affairs)名義向該機關提出正名要求，並追蹤該機構是否回應我方訴求．這些年北美FAPA致力於正名活動，已向許多官方及民間機構提出訴求並成功正名，其中包含：移民署，FDA，Apple…等等
+
 ##如何通報？
 
 Step 1: 發現需要改正的機構網站，事由填入『報案區』的表格
@@ -21,7 +24,9 @@ Step 6: 通報步驟完成後，『已知案件』區會看到您上傳的案件
 
 
 
-## Instructions
+## Instructions to Contribute
+
+Base boiler plate thanks to [choonkending's React-Webpack-Node](https://github.com/choonkending/react-webpack-node)
 
 1. `npm install`
 2. `npm run dev` to run locally
