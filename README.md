@@ -72,4 +72,4 @@ Install MongoDB:
 2. `brew install mongodb`
 3. `mongod` (Make sure you have the permissions to the directory /data/db)
 
-If you're interested in a boilerplate example with postgresql, check [reap](https://github.com/choonkending/reap) out!
+Put in your own Mandrill Key!
